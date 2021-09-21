@@ -1,10 +1,11 @@
 pipeline
 {
 	agent any
+	def mavenHome = tool name: "maven 3.8.2"
 	stages
 	{
 	
-	def mavenHome = tool name: "maven 3.8.2"
+	
 
 		stage('getting src')
 		{
