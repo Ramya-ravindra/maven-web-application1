@@ -1,6 +1,8 @@
 pipeline
 {
 	agent any
+	stages
+	{
 	
 	def mavenHome = tool name: "maven 3.8.2"
 
@@ -23,8 +25,7 @@ pipeline
 			sh "${mavenHome}/bin/mvn clean package sonar:sonar"
 		}
 
-
-	
+	}
 	post
 	{
 	always
