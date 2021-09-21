@@ -32,7 +32,7 @@ pipeline
 		emailext body: '''regards
 		ramya''', subject: 'build status', to: 'ramyahema73@gmail.com'
 		}
-	}
+	
 }
 
 }
