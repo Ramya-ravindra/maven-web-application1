@@ -11,6 +11,11 @@ git branch: 'development1', credentialsId: '790d9d01-86d2-48df-b2a9-72f18105394b
 stage('Build Articraft')
 {
 sh "${mavenHome}/bin/mvn clean package"
+}stage('sonar report')
+{
+sh "${mavenHome}/bin/mvn clean package sonar:sonar"
 }
+  
+  
 
 }
