@@ -16,7 +16,12 @@ stage('sonar report')
 {
 sh "${mavenHome}/bin/mvn clean package sonar:sonar"
 }
-  
-  
-
+}
+post
+{
+always
+{
+emailext body: '''regards
+ramya''', subject: 'build status', to: 'ramyahema73@gmail.com'
+}
 }
