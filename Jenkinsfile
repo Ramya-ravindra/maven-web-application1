@@ -46,7 +46,7 @@ sshagent(['7f075cae-dccc-4910-9139-94e291580778'])
 
 }
 }
-<!--
+/*
 stage('sendEmailNotification')
 {
 
@@ -55,6 +55,6 @@ mail bcc: '', body: '''buildover
 Regards,
 ramya.''', cc: '', from: '', replyTo: '', subject: 'buildover', to: 'ramyarocks541@gmail.com'
 }
--->
+*/
 
 }
