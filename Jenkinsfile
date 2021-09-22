@@ -1,8 +1,8 @@
 node
 {
-properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')),pipelineTriggers([githubPush()])])
+//properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')),pipelineTriggers([githubPush()])])
 
-
+properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), pipelineTriggers([githubPush()])])
 def mavenHome = tool name: "maven 3.8.2"
 
 stage('checkOutCode')
